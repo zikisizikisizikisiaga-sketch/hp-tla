@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://okinawa-home-page-project-tla.netlify.app/sitemap.xml
