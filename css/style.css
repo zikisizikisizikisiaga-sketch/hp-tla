@@ -817,7 +817,7 @@ section {
 .works-grid {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 420px;
+  max-width: 320px;
   gap: 28px;
 }
 
