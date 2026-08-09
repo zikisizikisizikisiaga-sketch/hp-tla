@@ -261,6 +261,17 @@ section {
   animation: heroGradientFlow 26s ease-in-out infinite alternate;
 }
 
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/IMG_9254.jpg");
+  background-size: cover;
+  background-position: center 65%;
+  opacity: 0.32;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
 @keyframes heroGradientFlow {
   0% { background-position: 50% 0%; }
   100% { background-position: 50% 100%; }
