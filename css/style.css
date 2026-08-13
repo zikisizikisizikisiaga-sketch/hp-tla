@@ -414,7 +414,9 @@ section {
 @media (max-width: 900px) {
   .hero {
     display: block;
+    min-height: auto;
     padding-top: clamp(64px, 9vh, 88px);
+    padding-bottom: clamp(32px, 6vw, 48px);
   }
 
   .hero-diagonal {
