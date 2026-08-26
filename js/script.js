@@ -1,4 +1,19 @@
+// TODO: 実際のLINE公式アカウントURL・電話番号に差し替えてください。
+// tel を空文字のままにしておくと、電話ボタンはお問い合わせフォームへのリンクになります。
+const CONTACT_CONFIG = {
+  lineUrl: 'https://lin.ee/xxxxxxx',
+  tel: '',
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-line-link]').forEach((el) => {
+    el.setAttribute('href', CONTACT_CONFIG.lineUrl);
+  });
+
+  document.querySelectorAll('[data-tel-link]').forEach((el) => {
+    el.setAttribute('href', CONTACT_CONFIG.tel ? `tel:${CONTACT_CONFIG.tel}` : '#contact');
+  });
+
   const header = document.getElementById('siteHeader');
   const navToggle = document.getElementById('navToggle');
   const navOverlay = document.getElementById('navOverlay');
