@@ -1669,11 +1669,6 @@ section {
     height: 18px;
   }
 
-  .sp-ctabar-btn--tel {
-    background: var(--color-off);
-    color: var(--color-navy);
-  }
-
   .sp-ctabar-btn--line {
     background: var(--color-teal);
     color: var(--color-white);
@@ -1816,6 +1811,48 @@ section {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ==========================================================================
+   Skip link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-family: var(--font-jp);
+  font-size: 14px;
+  text-decoration: none;
+  transform: translateY(-150%);
+  transition: transform 0.2s var(--ease);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Reduced motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* ==========================================================================

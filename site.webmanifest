@@ -1,0 +1,20 @@
+{
+  "name": "TLA｜沖縄のホームページ制作",
+  "short_name": "TLA",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#0e2233",
+  "background_color": "#0e2233",
+  "icons": [
+    {
+      "src": "images/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
