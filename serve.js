@@ -4,7 +4,7 @@ const path = require('path');
 
 const ROOT = __dirname;
 const PORT = 8124;
-const TYPES = { '.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml', '.png':'image/png', '.jpg':'image/jpeg' };
+const TYPES = { '.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml', '.png':'image/png', '.jpg':'image/jpeg', '.avif':'image/avif', '.webmanifest':'application/manifest+json', '.xml':'application/xml', '.txt':'text/plain' };
 
 http.createServer((req, res) => {
   let filePath = path.join(ROOT, decodeURIComponent(req.url.split('?')[0]));

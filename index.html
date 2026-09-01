@@ -56,7 +56,12 @@
     "addressLocality": "南城市",
     "addressRegion": "沖縄県",
     "addressCountry": "JP"
-  }
+  },
+  "logo": "https://okinawa-tla-homepage.netlify.app/images/favicon-180.png",
+  "image": "https://okinawa-tla-homepage.netlify.app/images/og-image.jpg",
+  "sameAs": [
+    "https://line.me/R/ti/p/@527yvzvj"
+  ]
 }
 </script>
 
@@ -286,14 +291,17 @@
           ホームページ作成事例
         </h2>
         <p class="works-subtitle">業種や事業内容に合わせたホームページを制作します</p>
-        <p class="section-lead">お店や会社の雰囲気、サービス内容、お客様に伝えたいことを丁寧にヒアリングし、それぞれの事業に合ったホームページを制作します。オーナー様のイメージを大切にしながら、地元のお客様に届くホームページ作りを行っています。</p>
+        <p class="section-lead">お店や会社の雰囲気、サービス内容、お客様に伝えたいことを丁寧にヒアリングし、それぞれの事業に合ったホームページを制作します。オーナー様のイメージを大切にしながら、地元のお客様に届くホームページ作りを行っています。<a href="/works/" class="inline-link">制作実績・制作サンプルの一覧はこちら</a></p>
       </div>
 
       <div class="works-grid">
         <a href="https://raize-hair-buzz.netlify.app/" target="_blank" rel="noopener" class="work-card is-ready reveal">
           <span class="work-badge work-badge--real">実績</span>
           <div class="work-thumb">
-            <img src="images/works-raize-hair-buzz.jpg" alt="RAIZE HAIR BUZZ トップページ" width="1600" height="1000" loading="lazy">
+            <picture>
+              <source srcset="images/works-raize-hair-buzz.avif" type="image/avif">
+              <img src="images/works-raize-hair-buzz.jpg" alt="RAIZE HAIR BUZZ トップページ" width="1600" height="1000" loading="lazy">
+            </picture>
           </div>
           <div class="work-caption">
             <p class="work-caption-title">TLA制作 — RAIZE HAIR BUZZ</p>
@@ -303,7 +311,10 @@
         <a href="https://sea-logient-yogi.netlify.app/" target="_blank" rel="noopener" class="work-card is-ready reveal">
           <span class="work-badge work-badge--real">実績</span>
           <div class="work-thumb">
-            <img src="images/works-sea-logient.jpg" alt="合同会社Sea LoGient トップページ" width="1600" height="1000" loading="lazy">
+            <picture>
+              <source srcset="images/works-sea-logient.avif" type="image/avif">
+              <img src="images/works-sea-logient.jpg" alt="合同会社Sea LoGient トップページ" width="1600" height="1000" loading="lazy">
+            </picture>
           </div>
           <div class="work-caption">
             <p class="work-caption-title">TLA制作 — Sea LoGient</p>
@@ -313,7 +324,10 @@
         <a href="https://barbers-sample.netlify.app/" target="_blank" rel="noopener" class="work-card work-card--sample reveal">
           <span class="work-badge work-badge--sample">サンプル</span>
           <div class="work-thumb">
-            <img src="images/works-sample-barber.jpg" alt="理容室サンプル トップページ" width="1672" height="941" loading="lazy">
+            <picture>
+              <source srcset="images/works-sample-barber.avif" type="image/avif">
+              <img src="images/works-sample-barber.jpg" alt="理容室サンプル トップページ" width="1672" height="941" loading="lazy">
+            </picture>
           </div>
           <div class="work-caption">
             <p class="work-caption-title">理容室サンプル</p>
@@ -454,7 +468,10 @@
             TLAは、大きな制作会社ではありません。沖縄県南城市を拠点に、県内の小さな会社や個人事業主のホームページ制作を行っています。営業担当→デザイナー→担当者と窓口が変わることなく、最初のご相談から制作・公開、その後の修正まで、私が直接対応します。
           </p>
           <div class="founder-tag">
-            <img src="images/logo-mark.png" alt="TLA ロゴ" class="mark" width="52" height="52" loading="lazy">
+            <picture>
+              <source srcset="images/logo-mark.avif" type="image/avif">
+              <img src="images/logo-mark.png" alt="TLA ロゴ" class="mark" width="52" height="52" loading="lazy">
+            </picture>
             <div>
               <p class="name">比嘉太一朗</p>
               <p class="role">TLA代表 / 沖縄県南城市</p>
@@ -514,6 +531,7 @@
         <div class="include-card reveal"><span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><p>SSL対応</p></div>
         <div class="include-card reveal"><span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><p>公開作業</p></div>
       </div>
+      <p class="section-cta-link reveal"><a href="/service/">サービス内容の詳しいご案内はこちら →</a></p>
     </div>
   </section>
 
@@ -580,6 +598,7 @@
           <li>契約は1ヶ月単位、縛りなし</li>
         </ul>
       </div>
+      <p class="section-cta-link reveal"><a href="/pricing/">料金プランの詳しいご案内はこちら →</a></p>
     </div>
   </section>
 
@@ -781,12 +800,14 @@
       <nav class="footer-nav en">
         <a href="#concept">Concept</a>
         <a href="#support">Support</a>
-        <a href="#works">Works</a>
-        <a href="#service">Service</a>
-        <a href="#price">Price</a>
+        <a href="/works/">Works</a>
+        <a href="/service/">Service</a>
+        <a href="/pricing/">Price</a>
         <a href="#flow">Flow</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
+        <a href="/about/">About</a>
+        <a href="/privacy/">Privacy</a>
       </nav>
     </div>
     <div class="footer-bottom en">

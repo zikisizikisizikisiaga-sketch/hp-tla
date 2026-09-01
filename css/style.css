@@ -1930,3 +1930,146 @@ section {
     grid-template-columns: 40px 1fr;
   }
 }
+
+/* ==========================================================================
+   Subpages (service / pricing / works / about / privacy)
+   ========================================================================== */
+.breadcrumb {
+  padding: 110px var(--gutter) 0;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-navy);
+  opacity: 0.7;
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: 6px;
+  opacity: 0.5;
+}
+
+.page-hero {
+  padding: 32px var(--gutter) 40px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-family: var(--font-jp);
+  font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 900;
+  color: var(--color-navy);
+  line-height: 1.4;
+}
+
+.page-hero .section-lead {
+  margin-top: 16px;
+  max-width: 640px;
+}
+
+.prose {
+  max-width: 760px;
+}
+
+.prose h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 40px 0 14px;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose p {
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+.prose ul {
+  padding-left: 1.4em;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+.prose ul li {
+  list-style: disc;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+}
+
+.info-table th,
+.info-table td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+}
+
+.info-table th {
+  width: 160px;
+  font-weight: 700;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.section-cta {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.section-cta-link {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.section-cta-link a {
+  color: var(--color-teal);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.prose a,
+.inline-link {
+  color: var(--color-teal);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .breadcrumb {
+    padding-top: 90px;
+  }
+
+  .info-table th {
+    width: auto;
+    display: block;
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  .info-table td {
+    display: block;
+    padding-top: 0;
+  }
+}
