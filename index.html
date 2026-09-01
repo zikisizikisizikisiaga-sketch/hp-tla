@@ -298,10 +298,7 @@
         <a href="https://raize-hair-buzz.netlify.app/" target="_blank" rel="noopener" class="work-card is-ready reveal">
           <span class="work-badge work-badge--real">実績</span>
           <div class="work-thumb">
-            <picture>
-              <source srcset="images/works-raize-hair-buzz.avif" type="image/avif">
-              <img src="images/works-raize-hair-buzz.jpg" alt="RAIZE HAIR BUZZ トップページ" width="1600" height="1000" loading="lazy">
-            </picture>
+            <img src="images/works-raize-hair-buzz.jpg" alt="RAIZE HAIR BUZZ トップページ" width="1600" height="1000" loading="lazy">
           </div>
           <div class="work-caption">
             <p class="work-caption-title">TLA制作 — RAIZE HAIR BUZZ</p>
@@ -311,10 +308,7 @@
         <a href="https://sea-logient-yogi.netlify.app/" target="_blank" rel="noopener" class="work-card is-ready reveal">
           <span class="work-badge work-badge--real">実績</span>
           <div class="work-thumb">
-            <picture>
-              <source srcset="images/works-sea-logient.avif" type="image/avif">
-              <img src="images/works-sea-logient.jpg" alt="合同会社Sea LoGient トップページ" width="1600" height="1000" loading="lazy">
-            </picture>
+            <img src="images/works-sea-logient.jpg" alt="合同会社Sea LoGient トップページ" width="1600" height="1000" loading="lazy">
           </div>
           <div class="work-caption">
             <p class="work-caption-title">TLA制作 — Sea LoGient</p>
@@ -324,10 +318,7 @@
         <a href="https://barbers-sample.netlify.app/" target="_blank" rel="noopener" class="work-card work-card--sample reveal">
           <span class="work-badge work-badge--sample">サンプル</span>
           <div class="work-thumb">
-            <picture>
-              <source srcset="images/works-sample-barber.avif" type="image/avif">
-              <img src="images/works-sample-barber.jpg" alt="理容室サンプル トップページ" width="1672" height="941" loading="lazy">
-            </picture>
+            <img src="images/works-sample-barber.jpg" alt="理容室サンプル トップページ" width="1672" height="941" loading="lazy">
           </div>
           <div class="work-caption">
             <p class="work-caption-title">理容室サンプル</p>
@@ -468,10 +459,7 @@
             TLAは、大きな制作会社ではありません。沖縄県南城市を拠点に、県内の小さな会社や個人事業主のホームページ制作を行っています。営業担当→デザイナー→担当者と窓口が変わることなく、最初のご相談から制作・公開、その後の修正まで、私が直接対応します。
           </p>
           <div class="founder-tag">
-            <picture>
-              <source srcset="images/logo-mark.avif" type="image/avif">
-              <img src="images/logo-mark.png" alt="TLA ロゴ" class="mark" width="52" height="52" loading="lazy">
-            </picture>
+            <img src="images/logo-mark.png" alt="TLA ロゴ" class="mark" width="52" height="52" loading="lazy">
             <div>
               <p class="name">比嘉太一朗</p>
               <p class="role">TLA代表 / 沖縄県南城市</p>
@@ -736,11 +724,9 @@
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contactForm">
-        <input type="hidden" name="access_key" value="0989bf34-99c2-46b6-a473-bf26f668c4d5">
-        <input type="hidden" name="subject" value="【TLA】ホームページより お問い合わせ">
-        <input type="hidden" name="from_name" value="TLA サイト お問い合わせフォーム">
-        <input type="checkbox" name="botcheck" class="hidden-field" style="display:none">
+      <form class="contact-form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="botcheck">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="botcheck" value="">
 
         <div class="field">
           <label for="name">お名前</label>

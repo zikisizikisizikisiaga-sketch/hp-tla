@@ -55,14 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = '送信中...';
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch('/', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString(),
         });
-        const data = await res.json();
 
-        if (data.success) {
+        if (res.ok) {
           form.reset();
           formNote.textContent = 'お問い合わせありがとうございます。内容を送信しました。';
           formNote.classList.add('is-success');

@@ -1380,6 +1380,10 @@ section {
   background: linear-gradient(135deg, #175a54, #0e2233);
 }
 
+.work-card--sample .work-thumb img {
+  filter: brightness(1.35) contrast(1.05);
+}
+
 .work-thumb--next {
   background: linear-gradient(135deg, var(--color-off), var(--color-mist));
 }
